@@ -32,7 +32,7 @@ class Project(
     var isActive: Boolean = isActive
 
     @OneToMany(
-        targetEntity = ExperienceDetail::class,
+        targetEntity = ProjectDetail::class,
         fetch = FetchType.LAZY,
         cascade = [CascadeType.ALL],
     )
