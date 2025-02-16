@@ -20,14 +20,14 @@ class ResumeDTO(
         )
     }
 
-    var achievements: List<AchievementDTO> = achievements.map{
-        com.taehee.portfolio.presentation.dto.AchievementDTO(
+    var achievements: List<AchievementDTO> = achievements.map {
+        AchievementDTO(
             title = it.title,
             description = it.description,
             host = it.host,
-            achievedDate = it.achieveDate
-                ?.format(java.time.format.DateTimeFormatter.ISO_LOCAL_DATE_TIME)
-                ?.replace("_", "."),
+            achievedDate = it.achievedDate
+                ?.format(DateTimeFormatter.ISO_LOCAL_DATE)
+                ?.replace("-", ".")
         )
     }
 

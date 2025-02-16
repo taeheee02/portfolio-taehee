@@ -20,7 +20,7 @@ class Achievement(
 
     var description: String = description
 
-    var achieveDate: LocalDate? = achievedDate
+    var achievedDate: LocalDate? = achievedDate
 
     var host: String = host
 
