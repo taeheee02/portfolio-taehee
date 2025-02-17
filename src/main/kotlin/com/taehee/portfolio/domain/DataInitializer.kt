@@ -55,12 +55,12 @@ class DataInitializer(
         linkRepository.saveAll(links)
 
         val experience1 = Experience(
-            title = "캣홀릭대학교(CatHolic Univ.)",
-            description = "컴퓨터공학 전공",
-            startYear = 2018,
-            startMonth = 9,
-            endYear = 2022,
-            endMonth = 8,
+            title = "한양대학교 (Hanyang Univ.)",
+            description = "컴퓨터소프트웨어학과",
+            startYear = 2024,
+            startMonth = 2,
+            endYear = null,
+            endMonth = null,
             isActive = true
         )
         experience1.addDetails(
@@ -70,10 +70,10 @@ class DataInitializer(
             )
         )
         val experience2 = Experience(
-            title = "주식회사 캣카오(Catkao Corp.)",
-            description = "소셜서비스팀 백엔드 개발자",
-            startYear = 2022,
-            startMonth = 9,
+            title = "미리디",
+            description = "미리캔버스 백엔드 개발자",
+            startYear = 2025,
+            startMonth = 3,
             endYear = null,
             endMonth = null,
             isActive = true,
