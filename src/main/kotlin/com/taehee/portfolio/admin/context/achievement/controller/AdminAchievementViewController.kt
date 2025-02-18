@@ -36,7 +36,7 @@ class AdminAchievementViewController(
             Pair("pageName", table.name),
             Pair("editable", true),
             Pair("deletable", false),
-            Pair("hostable", false)
+            Pair("hasDetails", false)
         )
         model.addAllAttributes(pageAttributes)
 
