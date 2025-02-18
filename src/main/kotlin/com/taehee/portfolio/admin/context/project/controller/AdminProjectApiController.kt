@@ -15,7 +15,7 @@ class AdminProjectApiController(
 ) {
 
     @PostMapping
-    fun post (@RequestBody @Validated form: ProjectForm): ResponseEntity<Any> {
+    fun postProject (@RequestBody @Validated form: ProjectForm): ResponseEntity<Any> {
         adminProjectService.save(form)
 
         return ApiResponse.successCreate()
