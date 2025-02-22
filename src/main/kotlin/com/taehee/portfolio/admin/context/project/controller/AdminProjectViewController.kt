@@ -31,7 +31,7 @@ class AdminProjectViewController(
         model.addAttribute("formElements", formElements)
 
         val detailFormElements = listOf<FormElementDTO>(
-            TextFormElementDTO("content", 10),
+            TextFormElementDTO("content", 4),
             TextFormElementDTO("url", 6),
             SelectFormElementDTO("isActive", 2, listOf(true.toString(), false.toString())),
         )

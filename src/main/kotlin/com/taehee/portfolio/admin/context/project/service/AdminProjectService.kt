@@ -18,7 +18,7 @@ class AdminProjectService(
         val classInfo = Project::class
         val entities = projectRepository.findAll()
 
-        return TableDTO.from(classInfo, entities, "details")
+        return TableDTO.from(classInfo, entities, "details", "skills")
     }
 
     fun getProjectDetailTable(id: Long?): TableDTO {
