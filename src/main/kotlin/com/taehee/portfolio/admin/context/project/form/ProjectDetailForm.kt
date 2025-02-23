@@ -10,7 +10,7 @@ data class ProjectDetailForm(
     @field:NotBlank(message = "필수값입니다.")
     val content: String,
 
-    val url: String,
+    val url: String?,
 
     val isActive: Boolean
 ){

@@ -44,11 +44,11 @@ class AdminProjectViewController(
         model.addAttribute("detailTable", detailTable)
 
         val pageAttributes = mutableMapOf<String, Any>(
-        Pair("menuName", "Projects"),
-        Pair("pageName", table.name),
-        Pair("editable", true),
-        Pair("deletable", false),
-        Pair("hasDetails", false)
+            Pair("menuName", "Projects"),
+            Pair("pageName", table.name),
+            Pair("editable", true),
+            Pair("deletable", false),
+            Pair("hasDetails", true),
         )
         model.addAllAttributes(pageAttributes)
 

@@ -8,7 +8,7 @@ import org.springframework.http.ResponseEntity
 import org.springframework.validation.annotation.Validated
 import org.springframework.web.bind.annotation.*
 
-@RestControllerAdvice
+@RestController
 @RequestMapping("/admin/api/projects")
 class AdminProjectApiController(
     private val adminProjectService: AdminProjectService

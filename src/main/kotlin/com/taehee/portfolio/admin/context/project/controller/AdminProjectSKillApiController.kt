@@ -10,7 +10,7 @@ import org.springframework.http.ResponseEntity
 import org.springframework.validation.annotation.Validated
 import org.springframework.web.bind.annotation.*
 
-@RestControllerAdvice
+@RestController
 @RequestMapping("/admin/api/projects/skills")
 class AdminProjectSKillApiController(
     private val adminProjectSkillService: AdminProjectSkillService

@@ -8,7 +8,6 @@ import com.taehee.portfolio.domain.entity.ProjectSkill
 import com.taehee.portfolio.domain.repository.ProjectRepository
 import com.taehee.portfolio.domain.repository.ProjectSkillRepository
 import com.taehee.portfolio.domain.repository.SkillRepository
-import org.springframework.data.jpa.domain.AbstractPersistable_.id
 import org.springframework.stereotype.Service
 import org.springframework.transaction.annotation.Transactional
 
