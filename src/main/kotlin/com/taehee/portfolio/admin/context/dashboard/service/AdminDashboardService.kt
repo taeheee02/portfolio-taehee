@@ -18,9 +18,9 @@ class AdminDashboardService(
         val pageRequest = PageRequest.of(0, 100, Sort.Direction.DESC, "id")
 
         val classInfo = HttpInterface::class
-        val entitiies = httpInterfaceRepository.findAll(pageRequest).content
+        val entities = httpInterfaceRepository.findAll(pageRequest).content
 
-        return TableDTO.from(classInfo, entitiies)
+        return TableDTO.from(classInfo, entities)
 
     }
 
