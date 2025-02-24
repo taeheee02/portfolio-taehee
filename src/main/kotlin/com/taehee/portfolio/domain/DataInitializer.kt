@@ -147,7 +147,7 @@ class DataInitializer(
 
         val account = Account(
             loginId = "admin1",
-            pw = "\$2a\$10\$MvUTCd0VNLVh/JOppHt0v.lTKNLLCbPbt.lt6ija.0VnfLLTAqYKG"
+            pw = "\$2a\$10\$08a0pJGRLmvn.fNoXATm3eN.HBzwYHMirysPdLB9ebvhF23WUlylW"
         )
         accountRepository.save(account)
     }
