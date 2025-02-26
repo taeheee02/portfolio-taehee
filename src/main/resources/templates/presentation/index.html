@@ -9,11 +9,11 @@
                 <div class="col-xxl-5">
                     <!-- Header text content-->
                     <div class="text-center text-xxl-start">
-                        <div class="badge bg-gradient-primary-to-secondary text-white mb-4"><div>Backend(Spring Framework) | OOP | QA Testing </div></div>
-                        <div class="fs-3 fw-bold text-muted">안녕하세요,</div>
+                        <div class="badge bg-gradient-primary-to-secondary text-black mb-4"><div>Backend(Spring Framework) | OOP | QA Testing </div></div>
+                        <div class="fs-3 fw-bold text-white-50">안녕하세요,</div>
                         <h1 class="display-3 fw-bolder mb-5"><span class="text-gradient d-inline">백엔드 개발자를 꿈꾸는 <br> 장태희입니다.</span></h1>
                         <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
-                            <a class="btn btn-outline-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" href="resume">Resume</a>
+                            <a class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" href="resume">Resume</a>
                             <a class="btn btn-outline-secondary btn-lg px-5 py-3 fs-6 fw-bolder" href="projects">Projects</a>
                         </div>
                     </div>
@@ -43,7 +43,7 @@
                     <div class="text-center my-5">
                         <h2 class="display-5 fw-bolder"><span class="text-gradient d-inline">About Me</span></h2>
                         <p class="mb-4"></p>
-                        <p class="text-muted" th:each = "introduction : ${introductions}" th:text="${introduction.content}">Lorem ipsum dolor sit amet</p>
+                        <p class="text-white-50" th:each = "introduction : ${introductions}" th:text="${introduction.content}">Lorem ipsum dolor sit amet</p>
                         <div class="d-flex justify-content-center fs-2 gap-4">
                             <a class="text-gradient" href="#!" target="_blank" th:each="link : ${links}" th:href="${link.content}"><i class="bi bi-twitter" th:class="|bi bi-${link.name}|"></i></a>
                         </div>
