@@ -16,31 +16,24 @@ class PresentationViewController(
         return "test"
     }
 
+
     @GetMapping("/")
-    fun index(model: Model): String {
+    fun home(model: Model): String {
+        // home 페이지에서 사용할 데이터들을 모두 모델에 담습니다.
         val introductions = presentationService.getIntroductions()
         model.addAttribute("introductions", introductions)
 
         val links = presentationService.getLinks()
         model.addAttribute("links", links)
 
-        return "presentation/index"
-    }
-
-    @GetMapping("/resume")
-    fun resume(model: Model): String {
         val resume = presentationService.getResume()
         model.addAttribute("resume", resume)
-        model.addAttribute("skillTypes",SkillType.values())
+        model.addAttribute("skillTypes", SkillType.values())
 
-        return "presentation/resume"
-    }
-
-    @GetMapping("/projects")
-    fun projects(model: Model): String {
         val projects = presentationService.getProjects()
         model.addAttribute("projects", projects)
 
-        return "presentation/projects"
+        return "presentation/home"
     }
+
 }

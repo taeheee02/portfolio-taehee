@@ -1,10 +1,42 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <title>포트폴리오</title>
+    <meta charset="UTF-8" />
+    <title>Scroll Test</title>
+    <style>
+        /* 테스트용 스타일 */
+        section { height: 800px; border: 1px solid #ccc; margin-bottom: 20px; }
+    </style>
 </head>
 <body>
-<p>안녕하세요.</p>
+
+<nav>
+    <a href="#section1">Go to Section1</a> |
+    <a href="#section2">Go to Section2</a> |
+    <a href="#section3">Go to Section3</a>
+</nav>
+
+<section id="section1" style="background-color: #eee;">
+    <h2>Section 1</h2>
+</section>
+<section id="section2" style="background-color: #fafafa;">
+    <h2>Section 2</h2>
+</section>
+<section id="section3" style="background-color: #ddd;">
+    <h2>Section 3</h2>
+</section>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener("click", function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute("href")).scrollIntoView({
+                    behavior: "smooth"
+                });
+            });
+        });
+    });
+</script>
 </body>
 </html>

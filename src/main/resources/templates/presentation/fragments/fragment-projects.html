@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!-- fragment-projects.html -->
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<section th:fragment="projects-content">
+    <div class="container px-5 my-5">
+        <div class="text-center mb-5">
+            <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Projects</span></h1>
+        </div>
+        <div class="row gx-5 justify-content-center">
+            <div class="col-lg-11 col-xl-9 col-xxl-8">
+                <th:block th:each="project : ${projects}">
+                    <div th:replace="~{presentation/fragments/fragment-card-project :: card(${project})}"></div>
+                </th:block>
+            </div>
+        </div>
+    </div>
+    <!-- Call to Action Section -->
+    <section class="py-3 bg-gradient-primary-to-secondary text-white">
+        <div class="container px-5 my-5">
+            <div class="text-center">
+                <h2 class="display-4 fw-bolder mb-4">Let's build something together</h2>
+            </div>
+        </div>
+    </section>
+</section>
+</body>
+</html>

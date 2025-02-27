@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<!-- home.html -->
+<html lang="ko" xmlns:th="http://www.thymeleaf.org"
+      th:replace="~{presentation/layouts/layout-main :: layout(~{::#content})}">
+<main class="flex-shrink-0" id="content">
+    <!-- Index Section (Header & About) -->
+    <section id="home" style="padding-top: 70px;">
+        <div th:replace="~{presentation/fragments/fragment-index :: index-content}"></div>
+    </section>
+    <!-- Resume Section -->
+    <section id="resume" style="padding-top: 70px;">
+        <div th:replace="~{presentation/fragments/fragment-resume :: resume-content}"></div>
+    </section>
+    <!-- Projects Section -->
+    <section id="projects" style="padding-top: 70px;">
+        <div th:replace="~{presentation/fragments/fragment-projects :: projects-content}"></div>
+    </section>
+</main>
+</html>
